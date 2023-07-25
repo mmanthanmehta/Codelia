@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Anton;
+    src: url(./Anton-Regular.ttf);
+}
+@font-face {
+    font-family: PP mori;
+    src: url(./PPMori-Regular.ttf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: PP mori;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-color: #FFF3DD;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    overflow: hidden;
+    /* border-radius: 50px; */
+    border-radius: 2vw;
+    height: 88vh;
+    width: 94vw;
+    background-color: #FFF;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 2vw 5vw;
+}
+.right{
+    background-image: url('./modern-woman-copyspace.jpg');
+    height: 100%;
+    width: 50%;
+    object-fit: fill;
+    padding: 2vw 5vw;
+    
+    
+    
+    background-size: cover;
+}
+/* img{
+    /* background-image: url('img_girl.jpg'); */
+    /*width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+} */
+.nav1{
+    display: flex;
+    gap: 6vw;
+    align-items: center;
+}
+.nav1 h1{
+    font-family: Anton;
+    /* font-size: 2vw; */
+    font-weight:900;
+}
+.nav2{
+    color: #747474;
+    display: flex;
+    gap: 3vw;
+}
+.nav2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+.nav2 h4:nth-child(1){
+    border-bottom: 2px solid #747474;
+}
+.nav3{
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    gap: 3vw;
+    text-transform: uppercase
+}
+.nav3 button{
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    padding: 1.1vw 2vw;
+    border-radius: 1.5vw;
+    border: none;
+    color: #FFF;
+    background-color: #000;
+}
+.left button{
+    margin-top: 8vw;
+    align-items: center ;
+    gap: 1vw;
+    padding: .5vw 1vw;
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #747474;
+    display: flex;
+    
+}
+.left button h3{
+    font-size: .8vw;
+    font-weight: 900;
+}
+.sammary h1{
+    font-family: Anton;
+    font-weight: 600;
+    margin-top: 3.5vw;
+    font-size: 5vw;
+    line-height: 4vw;
+}
+.sammary p{
+    color: #8b8b8b;
+    font-weight: 900;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    /* line-height: 4vw; */
+}
+.sammary button i{
+    color: orange;
+    font-size: x-large;
+}
+.left>button>i{
+
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+.left>button{
+    background-color: #e4e4e4;
+    border: transparent;
+    padding: 1vw 2vw;
+}
+
+@media (max-width:600px) {
+    .cont{
+        height: 94vh;
+        width: 88vw;
+        flex-direction: column;
+    }
+    .left{
+        height: 50%;
+        width: 100%;
+    }
+    .nav1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav1>h1{
+        font-size: 6vw;
+        font-weight: 300;
+
+    }
+    .nav2 h4{
+        font-size: 2vw;
+    }
+    .left button{
+        padding: 1;
+    }
+    .left button h3{
+        font-size: 2.5vw;
+        /* margin-top: 8vw; */
+        align-items: center ;
+        gap: 1vw;
+        padding: .8vw 1.6vw;
+        background-color: transparent;
+        border-radius: 50px;
+        
+    }
+    .left .sammary h1{
+        font-size: 10vw;
+        font-weight: 900;
+        margin-top: 3.5vw;
+        /* font-size: 5vw; */
+        line-height: 10vw;
+    }
+    .sammary p{
+        color: #8b8b8b;
+        font-weight: 900;
+        margin-top: 1.5vw;
+        font-size: 3vw;
+        /* line-height: 4vw; */
+    }
+    .right{
+        height: 50%;
+        width: 100%;
+    }
+    .right .nav3{
+        display: none;
+    }
+    .cont{
+        border-radius: 5px 5px 5px 50px;
+    }
+}
